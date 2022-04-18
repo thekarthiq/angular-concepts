@@ -1,0 +1,8 @@
+<h1>Parent Component</h1>
+<div>
+  <label>Data from Child Component : </label>{{messagefromChild}}
+</div>
+<button (click)="displayParentMessage()">Say Hello</button>
+
+<hr/>
+<app-child [inputFromParent]="messagefromParent"  (buttonClicked)="displayChildMessage($event)" ></app-child>
